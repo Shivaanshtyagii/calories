@@ -5,4 +5,5 @@ matplotlib==3.7.1
 seaborn==0.13.2
 numpy==1.26.1
 joblib==1.2.0
-pillow==9.5.0  # compatible with Python 3.11
+pillow==9.5.0 
+gunicorn 
