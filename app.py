@@ -1,12 +1,11 @@
+import os
 from flask import Flask, request, jsonify
 import pickle
 import numpy as np
 
 app = Flask(__name__)
 
-# Load your model
 model = pickle.load(open("rfr.pkl", "rb"))
-
 
 @app.route("/predict", methods=["POST"])
 def predict():
@@ -29,6 +28,6 @@ def predict():
     except KeyError as e:
         return jsonify({"error": f"Missing field: {e}"}), 400
 
-
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5001)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
