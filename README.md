@@ -3,6 +3,7 @@
 This project predicts the number of calories burnt during physical activities based on biometric and exercise data. It's built using Python, Machine Learning (Scikit-learn), and served through a Flask API.
 
 🚀 Live API: https://calories-2f7w.onrender.com
+APK link, Testing video link: https://drive.google.com/drive/folders/1-n31MyVzOMe4-WILSdJCZ1FrOshrWwrB?usp=sharing
 
 📌 Features
 
